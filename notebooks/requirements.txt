@@ -1,0 +1,9 @@
+hopsworks
+geopy
+streamlit
+xgboost
+joblib
+openmeteo-requests
+requests-cache
+retry-requests
+great_expectations
