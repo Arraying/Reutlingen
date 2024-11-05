@@ -1,2 +1,3 @@
 venv/
 notebooks/.cache.sqlite
+notebooks/.aqi_key
