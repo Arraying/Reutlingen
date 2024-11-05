@@ -281,10 +281,9 @@ def purge_project(proj):
     delete_secrets(proj, "SENSOR_LOCATION_JSON")
 
 
-def secrets_api(proj, api_key=None):
+def secrets_api(proj):
     host = "c.app.hopsworks.ai"
-    if api_key is None:
-        api_key = os.environ.get('HOPSWORKS_API_KEY')
+    api_key = os.environ.get('HOPSWORKS_API_KEY')
     conn = hopsworks.connection(host=host, project=proj, api_key_value=api_key)
     return conn.get_secrets_api()
 

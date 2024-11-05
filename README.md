@@ -1,5 +1,9 @@
 # Lab 1: Air Quality Prediction
 
+## Setup Notes
+
+- Hopsworks API key must have "user" checked in permission scope
+
 ## Task
 From https://id2223kth.github.io/assignments/2024/lab1/id2223-kth-lab1-2024.pdf:
 
