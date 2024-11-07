@@ -8,5 +8,5 @@ requests-cache
 retry-requests
 great_expectations
 matplotlib
-sklearn
+scikit-learn
 pandas
