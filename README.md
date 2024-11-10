@@ -38,8 +38,14 @@ We decided on the Zaisentalstraße sensor as it contained a lot of historical da
 Additionally, the sensor did not seem to produce invalid readings.
 
 We additionally impose expectations on our data.
-For example, the PM2.5 value may not be below -1 or above 500.
-**TODO: Add more expectations.**
+
+Air Quality Data:
+- The PM2.5 value may not be below -1 or above 500.
+- The location may not change.
+
+Weather Data:
+- The temperature may not be below -60 or above 60.
+- Precipitation and wind speed may not be below 0 or above 1000.
 
 ### Daily Updates
 
