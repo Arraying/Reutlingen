@@ -1,0 +1,11 @@
+date,temperature_2m_mean,precipitation_sum,wind_speed_10m_max,wind_direction_10m_dominant,city,predicted_pm25,pm25,street,country,days_before_forecast_day
+2024-11-02 00:00:00+00:00,8.4085,0.2,11.638917,57.269035,reutlingen,3.789554,8.6,zaisentalstraße,germany,1
+2024-11-03 00:00:00+00:00,7.4480834,0.0,7.8954163,121.260376,reutlingen,8.858627,7.4,zaisentalstraße,germany,1
+2024-11-04 00:00:00+00:00,5.9105835,0.0,6.9247384,158.4428,reutlingen,10.497578,6.42,zaisentalstraße,germany,1
+2024-11-05 00:00:00+00:00,8.996001,0.0,6.696387,220.9554,reutlingen,7.266383,7.1,zaisentalstraße,germany,1
+2024-11-06 00:00:00+00:00,9.116834,0.0,7.458606,19.536776,reutlingen,8.256969,7.89,zaisentalstraße,germany,1
+2024-11-07 00:00:00+00:00,7.250166,0.0,8.996398,24.087471,reutlingen,11.773292,14.33,zaisentalstraße,germany,1
+2024-11-08 00:00:00+00:00,7.056417,0.0,7.127636,141.18526,reutlingen,8.239414,4.03,zaisentalstraße,germany,1
+2024-11-09 00:00:00+00:00,7.337667,0.0,7.3094187,164.74477,reutlingen,9.611665,5.53,zaisentalstraße,germany,1
+2024-11-10 00:00:00+00:00,5.95,0.0,4.024922,26.564985,reutlingen,12.140126,9.66,zaisentalstraße,germany,1
+2024-11-11 00:00:00+00:00,7.2,0.0,6.297428,210.96368,reutlingen,9.966185,6.94,zaisentalstraße,germany,1
