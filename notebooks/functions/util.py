@@ -15,6 +15,9 @@ import hopsworks
 import hsfs
 from pathlib import Path
 
+from sklearn.metrics import mean_squared_error, mean_absolute_error
+
+
 def get_historical_weather(city, start_date,  end_date, latitude, longitude):
     # latitude, longitude = get_city_coordinates(city)
 
@@ -221,7 +224,14 @@ def plot_air_quality_forecast(city: str, street: str, df: pd.DataFrame, file_pat
         ax.plot(day, df['pm25'], label='Echtwert PM2.5', color='black', linewidth=2, marker='^', markersize=5, markerfacecolor='grey')
         legend2 = ax.legend(loc='upper left', fontsize='x-small')
         ax.add_artist(legend1)
-
+        # Add mean absolute error and root mean squared error to the plot
+        mae = mean_absolute_error(df['pm25'], df['predicted_pm25'])
+        # RMSE penalizes large errors more than MAE but is still in the same unit as the target (different from MSE)
+        rmse = mean_squared_error(df['pm25'], df['predicted_pm25'], squared=False)
+        # Add metrics to chart
+        ax.text(0.98, 0.03, f"MAE: {mae:.2f}, RMSE: {rmse:.2f}",
+                horizontalalignment='right', verticalalignment='bottom',
+                transform=ax.transAxes, bbox=dict(facecolor='white', alpha=0.8))
     # Ensure everything is laid out neatly
     plt.tight_layout()
 
