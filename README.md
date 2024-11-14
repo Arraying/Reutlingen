@@ -126,4 +126,17 @@ Some future steps that could be performed to improve the model are:
 Before the code can be set up, you need an API key for Hopsworks and AQICN.
 It should be noted that the Hopsworks API key must have _all_ scopes selected, including `USER`.
 
-**TODO: Explain the clone, dependency install and running process.**
+### Package dependencies
+- Python 3.10 & pip
+- Jupyter Notebook
+
+### Step-by-step
+1. Clone the repository. We will focus on `notebooks/` as it is the main working directory.
+2. Install the dependencies with `pip install -r requirements.txt`.
+3. Place your Hopsworks API key in `notebooks/.hw_hey` and your AQICN API key in `notebooks/.aqi_key`.
+4. (Only on first setup) Open `notebooks/1_air_quality_feature_backfill.ipynb`.
+   1. Read the instructions, fill in your parameters for station and location.
+   2. Run the notebook.
+5. Run `notebooks/2_air_quality_feature_pipeline.ipynb`.
+6. (Only on first setup or when re-training) Run `notebooks/3_air_quality_training_pipeline.ipynb`.
+7. Run `notebooks/4_air_quality_batch_inference.ipynb`.
