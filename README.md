@@ -132,7 +132,7 @@ It should be noted that the Hopsworks API key must have _all_ scopes selected, i
 
 ### Step-by-step
 1. Clone the repository. We will focus on `notebooks/` as it is the main working directory.
-2. Install the dependencies with `pip install -r requirements.txt`.
+2. Install the dependencies with `pip install -r notebooks/requirements.txt`.
 3. Place your Hopsworks API key in `notebooks/.hw_hey` and your AQICN API key in `notebooks/.aqi_key`.
 4. (Only on first setup) Open `notebooks/1_air_quality_feature_backfill.ipynb`.
    1. Read the instructions, fill in your parameters for station and location.
