@@ -291,7 +291,7 @@ def purge_project(proj):
     delete_secrets(proj, "SENSOR_LOCATION_JSON")
 
 
-def secrets_api():
+def secrets_api(project_name):
     return hopsworks.get_secrets_api()
 
 
