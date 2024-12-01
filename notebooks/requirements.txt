@@ -10,4 +10,3 @@ matplotlib
 scikit-learn
 pandas
 jupyter
-great-expectations
